@@ -1,5 +1,9 @@
 package com.elekta;
 
+import com.elekta.factory.AnimalFactory;
+import com.elekta.model.Animal;
+import com.elekta.model.Bird;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

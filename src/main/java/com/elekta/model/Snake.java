@@ -1,5 +1,7 @@
-package com.elekta;
+package com.elekta.model;
 
+import com.elekta.enumclass.NumberOfLegs;
+import com.elekta.model.Animal;
 import lombok.Data;
 
 /**

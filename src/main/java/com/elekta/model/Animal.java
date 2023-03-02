@@ -1,5 +1,6 @@
-package com.elekta;
+package com.elekta.model;
 
+import com.elekta.enumclass.NumberOfLegs;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
