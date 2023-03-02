@@ -1,4 +1,6 @@
-package com.elekta;
+package com.elekta.factory;
+
+import com.elekta.model.*;
 
 /**
  * Factory class for accessing the different animals in the pet store

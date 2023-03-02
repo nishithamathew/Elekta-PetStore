@@ -1,4 +1,4 @@
-package com.elekta;
+package com.elekta.enumclass;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
