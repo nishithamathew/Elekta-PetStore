@@ -1,6 +1,7 @@
 package com.elekta;
 
 import lombok.Data;
+
 /**
  * Class for representing Cats in the pet store
  */
@@ -10,15 +11,17 @@ public class Cat extends Animal {
 
     /**
      * Constructor
+     *
      * @param ownerName
      * @param petName
      * @param age
      * @param numberOfLives
      */
-    public Cat(String ownerName,String petName, int age, int numberOfLives) {
-        super(ownerName,petName,age,NumberOfLegs.FOUR);
+    public Cat(String ownerName, String petName, int age, int numberOfLives) {
+        super(ownerName, petName, age, NumberOfLegs.FOUR);
         this.numberOfLives = numberOfLives;
     }
+
     /**
      * Display the details with number of lives
      */

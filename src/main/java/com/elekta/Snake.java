@@ -9,11 +9,12 @@ import lombok.Data;
 public class Snake extends Animal {
     /**
      * Constructor
+     *
      * @param ownerName
      * @param petName
      * @param age
      */
-    public Snake(String ownerName,String petName, int age) {
-        super(ownerName,petName,age,NumberOfLegs.ZERO);
+    public Snake(String ownerName, String petName, int age) {
+        super(ownerName, petName, age, NumberOfLegs.ZERO);
     }
 }

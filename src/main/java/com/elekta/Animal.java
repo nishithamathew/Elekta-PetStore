@@ -20,7 +20,7 @@ public abstract class Animal {
      * Display the details of animals
      */
     public void display() {
-        System.out.print(this.getClass().getSimpleName() + "\t | " + ownerName + "\t | " + petName + "\t | " + age  + "\t | " + numberOfLegs.getLegs());
+        System.out.print(this.getClass().getSimpleName() + "\t | " + ownerName + "\t | " + petName + "\t | " + age + "\t | " + numberOfLegs.getLegs());
     }
 
 }

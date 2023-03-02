@@ -10,11 +10,12 @@ import java.util.List;
 public class PetStore {
     /**
      * Main method
+     *
      * @param args
      */
     public static void main(String[] args) {
-    PetStore petStore = new PetStore();
-    petStore.addAnimalsIntoStore();
+        PetStore petStore = new PetStore();
+        petStore.addAnimalsIntoStore();
     }
 
     /**
@@ -38,10 +39,12 @@ public class PetStore {
 
     /**
      * Different operations in pet store
+     *
      * @param animalList
      */
     public void operationsOnPetStore(List<Animal> animalList) {
-        System.out.println("Displaying all Animals in the Pet Store \n");;
+        System.out.println("Displaying all Animals in the Pet Store \n");
+        ;
         displayAllAnimals(animalList);
 
         System.out.println("Displaying all Animals Sort By Owner Name \n ");
@@ -56,6 +59,7 @@ public class PetStore {
 
     /**
      * Display all the animals in the pet store
+     *
      * @param animalList
      */
     public void displayAllAnimals(List<Animal> animalList) {
@@ -69,41 +73,50 @@ public class PetStore {
 
     /**
      * Sort Animals by Owner name in the pet store
+     *
      * @param animalList
      */
     public void sortByOwnerName(List<Animal> animalList) {
         displayTableHeader();
-        animalList.stream().sorted(Comparator.comparing(Animal::getOwnerName)).forEach(animal ->  { animal.display();
-            System.out.println();});
+        animalList.stream().sorted(Comparator.comparing(Animal::getOwnerName)).forEach(animal -> {
+            animal.display();
+            System.out.println();
+        });
         System.out.println("\n");
     }
 
     /**
      * Display the Birds in the pet store
+     *
      * @param animalList
      */
-    public void showBirds(List<Animal> animalList){
+    public void showBirds(List<Animal> animalList) {
         displayTableHeader();
-        animalList.stream().filter(animal -> animal instanceof Bird).forEach(animal ->  { animal.display();
-            System.out.println();});
+        animalList.stream().filter(animal -> animal instanceof Bird).forEach(animal -> {
+            animal.display();
+            System.out.println();
+        });
         System.out.println("\n");
     }
 
     /**
      * Display Animals whose age 5 year or above
+     *
      * @param animalList
      */
-    public void showAnimalsAgeAboveFive(List<Animal> animalList){
+    public void showAnimalsAgeAboveFive(List<Animal> animalList) {
         displayTableHeader();
-        animalList.stream().filter(animal -> animal.getAge() >= 5).forEach(animal ->  { animal.display();
-            System.out.println();});
+        animalList.stream().filter(animal -> animal.getAge() >= 5).forEach(animal -> {
+            animal.display();
+            System.out.println();
+        });
         System.out.println("\n");
     }
 
     /**
      * Display the table header
      */
-    public void displayTableHeader(){
+    public void displayTableHeader() {
         System.out.println("Animal \t | Owner Name \t | Pet Name \t | Age \t | Number Of Legs \t | Number Of Lives \n ----------------------------------------------------------------------------------------");
     }
 }

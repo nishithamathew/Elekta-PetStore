@@ -9,6 +9,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum NumberOfLegs {
- ZERO(0),TWO(2),FOUR(4);
- private final int legs;
+    ZERO(0), TWO(2), FOUR(4);
+    private final int legs;
 }
